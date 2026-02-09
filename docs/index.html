@@ -201,6 +201,26 @@
             text-decoration: none;
         }
 
+        .language-switcher {
+            text-align: right;
+            padding: 15px 20px;
+        }
+
+        .language-switcher a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border: 1px solid #e74c3c;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .language-switcher a:hover {
+            background: #e74c3c;
+            color: white;
+        }
+
         @media (max-width: 600px) {
             .header h1 {
                 font-size: 1.5em;
@@ -227,6 +247,10 @@
     </style>
 </head>
 <body>
+    <div class="language-switcher">
+        <a href="docs/en/index.html">🌐 VERSION ENGLISH</a>
+    </div>
+
     <div class="container">
         <div class="header">
             <h1>🏥 MY MEDICINE / Meu Remédio</h1>
@@ -307,4 +331,3 @@
     </div>
 </body>
 </html>
-    
