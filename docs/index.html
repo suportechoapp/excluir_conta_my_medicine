@@ -29,6 +29,26 @@
             overflow: hidden;
         }
 
+	    .language-switcher {
+            background: white;
+            padding: 15px 30px;
+            text-align: right;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .language-switcher a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95em;
+            transition: color 0.3s ease;
+        }
+
+        .language-switcher a:hover {
+            color: #c0392b;
+            text-decoration: underline;
+        }
+
         .header {
             background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
             color: white;
@@ -201,26 +221,6 @@
             text-decoration: none;
         }
 
-        .language-switcher {
-            text-align: right;
-            padding: 15px 20px;
-        }
-
-        .language-switcher a {
-            color: #e74c3c;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 8px 16px;
-            border: 1px solid #e74c3c;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-        }
-
-        .language-switcher a:hover {
-            background: #e74c3c;
-            color: white;
-        }
-
         @media (max-width: 600px) {
             .header h1 {
                 font-size: 1.5em;
@@ -243,15 +243,19 @@
                 height: 35px;
                 font-size: 1em;
             }
+
+            .language-switcher {
+                padding: 12px 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="language-switcher">
-        <a href="..docs/en/index.html">🌐 VERSION ENGLISH</a>
-    </div>
-
+    
     <div class="container">
+        <div class="language-switcher">
+            <a href="..en/index.html">🌐 VERSION ENGLISH</a>
+        </div>
         <div class="header">
             <h1>🏥 MY MEDICINE / Meu Remédio</h1>
             <p>Como excluir sua conta</p>
